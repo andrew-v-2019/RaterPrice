@@ -1,0 +1,36 @@
+﻿1. Лучшие товары (акции) в городе (GET)
+/api/goods/best?max={x}&skip={y}&cityId={id}
+/api/goods/best?max=20&skip=100&cityId=1
+max - количество выдаваемых записей
+skip - пропустить указанное количество записей
+cityId - идентификатор города
+
+2. Информация о товаре по ID (GET)
+/api/goods/{id}
+/api/goods/2
+
+3. Информация о ценах на товар в городе (GET)
+Список цен в магазинах, минимальная и максимальная цены
+/api/goods/{id}/prices?cityId={id}
+/api/goods/2/prices?cityId=1
+
+4. Добавить цену на товар (POST)
+/api/goods/{id}/prices
+token - token для авторизации
+cityId - id города
+price - цена
+shopId - id магазина
+
+5. Получить список городов
+/api/cities
+
+6. Поиск товаров по имени (GET)
+/api/goods/search?queryName={str}
+
+7. Поиск товара по штрихкоду
+/api/goods/search?queryBarcode={str}
+
+8. Поиск магазина в городе
+/api/shops/search?cityId={id}&querySearch={str}
+cityId - id города
+querySearch - строка для поиска (название магазина или адрес)

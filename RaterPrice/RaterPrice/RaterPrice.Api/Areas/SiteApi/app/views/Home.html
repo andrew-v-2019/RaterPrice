@@ -1,0 +1,38 @@
+<div>
+    <div class="col-xs-12 input-group-sm">
+        <div class="input-group input-group-sm">
+            <input type="text" class="form-control" placeholder="Поиск по названию или штрих коду...">
+            <div class="input-group-btn">
+                <button tabindex="-1" class="btn btn-default" type="button">Поиск...</button>
+                <button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li>
+                        <a href="#">Поиск по навзванию товара</a>
+                    </li>
+                    <li>
+                        <a href="#">Поиск по штрих коду</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6" ng-repeat="g in goods">
+            <div class="popularGood">
+                <span>{{g.Name}}</span>
+                <div class="imgContainer">
+                    <img src="../../../../Images/No_image_available.jpg" />
+                </div>
+                <div class="maxPrice">
+                    {{g.MaxPrice.Price}} - {{g.MaxPrice.ShopName}}
+                </div>
+                <div class="maxPrice">
+                    {{g.MinPrice.Price}} - {{g.MinPrice.ShopName}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

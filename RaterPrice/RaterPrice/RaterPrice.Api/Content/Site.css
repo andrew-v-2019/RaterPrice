@@ -1,0 +1,36 @@
+﻿
+
+
+@font-face {
+    font-family: Pompadur; /* Имя шрифта */
+    src: url(https://fonts.googleapis.com/css?family=Exo+2); /* Путь к файлу со шрифтом */
+   }
+.container-fluid .col-lg-6 .popularGood {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 1px solid #b0c4de;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.col-lg-6 .popularGood .imgContainer {
+    width: 100%;
+    height: auto;
+}
+
+.col-lg-6 .popularGood span {
+    color: #4682b4;
+    font-family: Pompadur;
+    font-size: 1.2em;
+}
+
+.col-lg-6 .popularGood .imgContainer img {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col-lg-6 .popularGood .maxPrice {
+    width: 100%;
+}
